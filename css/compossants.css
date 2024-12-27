@@ -1,0 +1,537 @@
+/* UIBAL */
+.container {
+    --uib-size: 40px;
+    --uib-color: var(--orange);
+    --uib-speed: 1.5s;
+    --dot-size: calc(var(--uib-size) * 0.17);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: var(--uib-size);
+    width: var(--uib-size);
+    animation: smoothRotate calc(var(--uib-speed) * 1.8) linear infinite;
+}
+
+.dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    animation: rotate var(--uib-speed) ease-in-out infinite;
+}
+
+.dot::before {
+    content: '';
+    height: var(--dot-size);
+    width: var(--dot-size);
+    border-radius: 50%;
+    background-color: var(--uib-color);
+    transition: background-color 0.3s ease;
+}
+x
+.dot:nth-child(2),
+.dot:nth-child(2)::before {
+    animation-delay: calc(var(--uib-speed) * -0.835 * 0.5);
+}
+
+.dot:nth-child(3),
+.dot:nth-child(3)::before {
+    animation-delay: calc(var(--uib-speed) * -0.668 * 0.5);
+}
+
+.dot:nth-child(4),
+.dot:nth-child(4)::before {
+    animation-delay: calc(var(--uib-speed) * -0.501 * 0.5);
+}
+
+.dot:nth-child(5),
+.dot:nth-child(5)::before {
+    animation-delay: calc(var(--uib-speed) * -0.334 * 0.5);
+}
+
+.dot:nth-child(6),
+.dot:nth-child(6)::before {
+    animation-delay: calc(var(--uib-speed) * -0.167 * 0.5);
+}
+
+@keyframes rotate {
+    0% {
+    transform: rotate(0deg);
+    }
+    65%,
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes smoothRotate {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+/* UIVERSE */
+
+/* From Uiverse.io by absoluteSTrange */ 
+.button {
+    width: 4.5cm;height: 1.4cm;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--orange);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: var(--orange2) 0px 5px 0px 0px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    box-shadow: var(--orange2) 0px 5px 0px 0px;
+  }
+  
+  .button:active {
+    background-color: var(--orange);
+    /*50, 168, 80*/
+    box-shadow: var(--orange2) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+  }
+
+  /* 00000000000000000000000000000000000000000 */
+/* From Uiverse.io by PriyanshuGupta28 */ 
+.checkbox-wrapper-51 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+
+
+.checkbox-wrapper-51 .toggle {
+  position: relative;
+  display: block;
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-51 .toggle:before {
+  content: "";
+  position: relative;
+  top: 1px;
+  left: 1px;
+  width: 40px;
+  height: 22px;
+  display: block;
+  background: #c8ccd4;
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.checkbox-wrapper-51 .toggle span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(154,153,153,0.75);
+  transition: all 0.2s ease;
+}
+
+.checkbox-wrapper-51 .toggle span svg {
+  margin: 7px;
+  fill: none;
+}
+
+.checkbox-wrapper-51 .toggle span svg path {
+  stroke: #c8ccd4;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 24;
+  stroke-dashoffset: 0;
+  transition: all 0.5s linear;
+}
+
+.checkbox-wrapper-51 input[type="checkbox"]:checked + .toggle:before {
+background: var(--orange);
+}
+
+.checkbox-wrapper-51 input[type="checkbox"]:checked + .toggle span {
+  transform: translateX(18px);
+}
+
+.checkbox-wrapper-51 input[type="checkbox"]:checked + .toggle span path {
+  stroke: #000000;
+  stroke-dasharray: 25;
+  stroke-dashoffset: 25;
+}
+
+
+/* pattern */
+
+/* From Uiverse.io by csemszepp */ 
+
+.checkbox-wrapper-511 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+.checkbox-wrapper-511{
+  transform: translateY(40px);
+}
+
+.checkbox-wrapper-511 .toggle1 {
+  position: relative;
+  display: block;
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-511 .toggle1:before {
+  content: "";
+  position: relative;
+  top: 1px;
+  left: 1px;
+  width: 40px;
+  height: 22px;
+  display: block;
+  background: #c8ccd4;
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.checkbox-wrapper-511 .toggle1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(154,153,153,0.75);
+  transition: all 0.2s ease;
+}
+
+.checkbox-wrapper-511 .toggle1 span svg {
+  margin: 7px;
+  fill: none;
+}
+
+.checkbox-wrapper-511 .toggle1 span svg path {
+  stroke: #c8ccd4;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 24;
+  stroke-dashoffset: 0;
+  transition: all 0.5s linear;
+}
+
+.checkbox-wrapper-511 input[type="checkbox"]:checked + .toggle:before {
+background: var(--orange);
+}
+
+.checkbox-wrapper-511 input[type="checkbox"]:checked + .toggle span {
+  transform: translateX(18px);
+}
+
+.checkbox-wrapper-511 input[type="checkbox"]:checked + .toggle span path {
+  stroke: #000000;
+  stroke-dasharray: 25;
+  stroke-dashoffset: 25;
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.switch {
+  position: relative;
+  height: 1.5rem;
+  width: 3rem;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 9999px;
+  background-color: rgba(100, 116, 139, 0.377);
+  transition: all .3s ease;
+}
+
+.switch:checked {
+  background-color: var(--orange);
+}
+
+.switch::before {
+  position: absolute;
+  content: "";
+  left: calc(1.5rem - 1.6rem);
+  top: calc(1.5rem - 1.6rem);
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  cursor: pointer;
+  border: 1px solid rgba(100, 116, 139, 0.527);
+  border-radius: 9999px;
+  background-color: var(--noire);
+  box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+  transition: all .3s ease;
+}
+
+.switch:hover::before {
+  box-shadow: 0 0 0px 8px rgba(0, 0, 0, .15)
+}
+
+.switch:checked:hover::before {
+  box-shadow: 0 0 0px 8px var(--oranget)
+}
+
+.switch:checked:before {
+  transform: translateX(100%);
+  border-color: var(--orange);
+}
+
+/* From Uiverse.io by ArturCodeCraft */ 
+/* <reset-style> ============================ */
+a {
+  text-decoration: none;
+}
+/* <main-style> ============================ */
+.menu__link {
+  color: #fff;
+  line-height: 2;
+  position: relative;
+}
+
+.menu__link:hover {
+  color: #fff;
+  line-height: 2;
+  position: relative;
+}
+
+.menu__link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -.25rem;
+  left: 0;
+  transition: width .4s;
+}
+
+.menu__link:hover::before {
+  width: 100%;
+}
+
+
+
+
+/* CART SOCIAL */
+/* CART SOCIAL */
+/* CART SOCIAL */
+/* CART SOCIAL */
+/* CART SOCIAL */
+/* CART SOCIAL */
+/* CART SOCIAL */
+/* CART SOCIAL */
+/* CART SOCIAL */
+/* CART SOCIAL */
+
+/* From Uiverse.io by G4b413l */ 
+.cardxxxx svg {
+  height: 25px;
+  
+}
+
+.cardxxxx {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  height: 50px;
+  width: 200px;
+}
+
+.cardxxxx::before, .cardxxxx::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  transition: 0.25s linear;
+  z-index: 1;
+}
+
+.cardxxxx::before {
+  content: "";
+  left: 0;
+  justify-content: flex-end;
+  background-color: var(--orange);
+}
+
+.cardxxxx::after {
+  content: "";
+  right: 0;
+  justify-content: flex-start;
+  background-color: var(--orange2);
+}
+
+.cardxxxx:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.cardxxxx:hover span {
+  opacity: 0;
+  z-index: -3;
+}
+
+.cardxxxx:hover::before {
+  opacity: 0.5;
+  transform: translateY(-100%);
+}
+
+.cardxxxx:hover::after {
+  opacity: 0.5;
+  transform: translateY(100%);
+}
+
+.cardxxxx span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  font-family: 'Fira Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+}
+
+.cardxxxx .social-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.cardxxxx .social-link svg {
+  text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+  transform: scale(1);
+}
+
+.cardxxxx .social-link:hover {
+  background-color: rgba(249, 244, 255, 0.774);
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* WAVE MOVE */
+
+.e-card {  background: transparent;  position: relative;  width: 340px;  height: 330px;  border-radius: 16px;  overflow: hidden;}
+
+.wave {  position: absolute;  width: 540px;  height: 700px;  opacity: 0.6;  left: 0;  top: 0;  margin-left: -50%;  margin-top: -70%;  background: linear-gradient(744deg,var(--orange),var(--orange2) 60%,#ff6600)}
+
+.e-card .icon {  width: 3em;  margin-top: -1em;  padding-bottom: 1em;}
+
+.infotop {display: flex;justify-content: center;align-items: center; flex-direction: column;  font-size: 20px;  position: absolute;  top: 5.6em;  left: 0;  right: 0;  top: 0;height: 100%;}
+
+.name {  font-size: 14px;  font-weight: 100;  position: relative;  top: 1em;  text-transform: lowercase;}
+
+.wave:nth-child(2),.wave:nth-child(3) {top: 210px;}
+
+.playing .wave {  border-radius: 40%;  animation: wave 3000ms infinite linear;}
+
+.wave {border-radius: 40%;animation: wave 55s infinite linear;}
+
+.playing .wave:nth-child(2) {animation-duration: 4000ms;}
+
+.wave:nth-child(2) {animation-duration: 50s;}
+
+.playing .wave:nth-child(3) {animation-duration: 5000ms;}
+
+.wave:nth-child(3) {animation-duration: 45s;}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.cvo{position: fixed;width: 100%;height: 100%;left: 0;top: 0;z-index: -10;}
+.e-cardx {  background: transparent;  position: relative;  width: 100vh;  height: 100%;  border-radius: 16px;  overflow: hidden;}
+
+.wavex {  position: absolute;  width: 840px;  height: 800px;  opacity: 0.6;  left: -200px;  top: 400px;  margin-left: -50%;  margin-top: -70%;  background: linear-gradient(744deg,var(--orange),var(--orange2) 60%,#ff6600)}
+
+.iconx {  width: 3em;  margin-top: -1em;  padding-bottom: 1em;}
+
+.infotopx {display: flex;justify-content: center;align-items: center; flex-direction: column;  font-size: 20px;  position: absolute;  top: 5.6em;  left: 0;  right: 0;  top: 0;height: 100%;}
+
+.namex {  font-size: 14px;  font-weight: 100;  position: relative;  top: 1em;  text-transform: lowercase;}
+
+.wavex:nth-child(2),.wave:nth-child(3) {top: 210px;}
+
+.playingx .wavex {  border-radius: 40%;  animation: wave 3000ms infinite linear;}
+
+.wavex {border-radius: 40%;animation: wave 55s infinite linear;}
+
+.playingx .wavex:nth-child(2) {animation-duration: 4000ms;}
+
+.wavex:nth-child(2) {animation-duration: 50s;}
+
+.playingx .wavex:nth-child(3) {animation-duration: 5000ms;}
+
+.wavex:nth-child(3) {animation-duration: 45s;}
+
