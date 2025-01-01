@@ -11,9 +11,15 @@ COPY . /var/www/DYCATHECORDE
 RUN sed -i 's|/var/www/html|/var/www/DYCATHECORDE|g' /etc/apache2/sites-available/000-default.conf
 RUN sed -i 's|/var/www/html|/var/www/DYCATHECORDE|g' /etc/apache2/apache2.conf
 
+# Activer les modules Apache nécessaires
+RUN a2enmod rewrite
+
 # Donner les permissions appropriées
-RUN chown -R www-data:www-data /var/www/DYCATHECORDE
-RUN chmod -R 755 /var/www/DYCATHECORDE
+RUN chown -R www-data:www-data /var/www/DYCATHECORDE \
+    && chmod -R 755 /var/www/DYCATHECORDE
 
 # Exposer le port 80
 EXPOSE 80
+
+# Commande par défaut pour démarrer Apache
+CMD ["apache2-foreground"]
