@@ -1,7 +1,6 @@
 <div class="count">
     <div class="el">
         <div class="ico">
-            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <svg fill="var(--orange)" xmlns="http://www.w3.org/2000/svg" 
                     viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
             <path d="M30,58c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h20c0.5,0,0.9,0.2,1.3,0.5C54.5,49,59,46.6,64,46.1V26
@@ -95,7 +94,6 @@
                                         <div class="icon <?=$dataV['interface']?>">
                                             <!-- Mobile -->
                                                 <div class="int mobiles">
-                                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
                                                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12 18H12.01M9.2 21H14.8C15.9201 21 16.4802 21 16.908 20.782C17.2843 20.5903 17.5903 20.2843 17.782 19.908C18 19.4802 18 18.9201 18 17.8V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.07989 6 6.2V17.8C6 18.9201 6 19.4802 6.21799 19.908C6.40973 20.2843 6.71569 20.5903 7.09202 20.782C7.51984 21 8.07989 21 9.2 21Z" stroke="var(--blanc)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -103,7 +101,6 @@
 
                                                 <!-- Tablette -->
                                                 <div class="int tablettes">
-                                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
                                                 <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C2.89543 0 2 0.895431 2 2V14C2 15.1046 2.89543 16 4 16H12C13.1046 16 14 15.1046 14 14V2C14 0.895431 13.1046 0 12 0H4ZM12 3H4V13H12V3Z" fill="var(--blanc)"/>
                                                 </svg>
@@ -111,7 +108,6 @@
 
                                                 <!-- Pc -->
                                                 <div class="int pcs">
-                                                <?xml version="1.0" encoding="utf-8"?>
                                                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                                 <g fill="none" fill-rule="evenodd">
                                                 <path d="m0 0h32v32h-32z"/>

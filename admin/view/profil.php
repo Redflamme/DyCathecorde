@@ -59,7 +59,6 @@
                 
                 <a href="./dashboard.php?page=<?=$page?>&social=insertsocial">
                     <div class="cic">
-                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
                         <svg fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9,17h6v6a1,1,0,0,0,2,0V17h6a1,1,0,0,0,0-2H17V9a1,1,0,0,0-2,0v6H9a1,1,0,0,0,0,2Z"/>
                         </svg>
@@ -71,7 +70,6 @@
                     <div>
                         <a href="../asset/fichier/Cv.pdf" target="_blank">
                             <div style="width: 200px;background: var(--grisxx);padding: 10px;border-radius: 1rem;border: 2px solid var(--gris);">
-                                <?xml version="1.0" encoding="utf-8"?>
 
                                 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
                                 <svg xmlns="http://www.w3.org/2000/svg" 

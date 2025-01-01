@@ -69,3 +69,13 @@ if (nameStorage == "1") {
     }
 }
     
+// document.addEventListener("keydown", function (event) {
+//     if (event.ctrlKey && (event.key === "s" || event.key === "S")) {
+//         event.preventDefault();
+//     }
+// });
+
+// // Désactiver le clic droit
+// document.addEventListener("contextmenu", function (event) {
+//     event.preventDefault();
+// });

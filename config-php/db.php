@@ -15,6 +15,7 @@ try {
 
     // Connexion à la base de données
     $bdd = new PDO("mysql:host=$host;dbname=$dbname", $username, $password, $pdo_options);
+    echo "Connexion réussie à la base de données.";
 } catch (PDOException $e) {
     // Gestion des erreurs
     echo "Erreur de connexion : " . $e->getMessage();

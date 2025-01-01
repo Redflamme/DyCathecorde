@@ -1,6 +1,10 @@
 <?php
     require "../config-php/config.php";
     require './view/head.php';
+    ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 ?>
 <body class="noscroll body">
     <div class="ddrt"></div>
@@ -124,6 +128,8 @@
                     default:   
                         
                 }
+
+
             
             ?>
 

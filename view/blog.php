@@ -101,7 +101,7 @@
                 <div>
                     <div class="profil">
                         <div class="imgs">
-                            <img src="../asset/admin/<?=$dataAdx['image']?>" class="imgprof" alt="">
+                            <img src="../asset/admin/<?=$dataAdx['image']?>" class="imgprof" alt="<?=$dataSi['slug']?>">
                         </div>
                         <div class="nomx">
                             <span class="tex">
@@ -156,7 +156,7 @@
                             <div class="content">
                             
                                 <div style="width: 100%;height: 5cm;">
-                                    <img src="../asset/blog/<?=$dataB['image']?>" style="width: 100%;height: 100%;opacity: 90%;" alt="" srcset="">
+                                    <img src="../asset/blog/<?=$dataB['image']?>" style="width: 100%;height: 100%;opacity: 90%;" alt="<?=$dataSi['slug']?>" srcset="">
                                 </div>   
                                 <div class="infos">
                                         <span class="title">

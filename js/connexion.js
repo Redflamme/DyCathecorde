@@ -1,3 +1,7 @@
+$('#erasemail').click(function(){
+  document.querySelector(".mailti").value="";
+});
+
 $('#login').click(function(){
     var email = $('.mailti').val();
     var pwd = $('.pwdi').val();

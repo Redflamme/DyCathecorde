@@ -1,13 +1,30 @@
 <?php
-    require './view/head.php';
-    require './config-php/client.php';
-    require './config-php/visiteur.php';
-    require './view/seo.php';
-
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+    require '../config-php/client.php';
+    require '../config-php/visiteur.php';
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dycathecode</title>
+    <link rel="stylesheet" href="../web-fonts-with-css/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../web-fonts-with-css/css/all.min.css">
+    <link rel="stylesheet" href="../web-fonts-with-css/css/all.css">
+    <link rel="stylesheet" href="../css/color.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/compossants.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/tablette.css">
+    <link rel="stylesheet" href="../css/boostrap.css">
+    <link rel="stylesheet" href="../css/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.css">
+    <!-- <script src="./js/jquery.js"></script> -->
+    <link rel="shortcut icon" href="../asset/icon/logo.ico">
+
+</head>
+
+
 <div class="background"></div>
 <div class="containerxx "></div>
 <div class="cvo">
@@ -76,7 +93,7 @@
                         <span class="d">D</span>
                         <span class="y">y</span>
                         <span class="c">C</span>
-                        <!-- <embed src="./asset/img/logo.png" alt="<?=$dataSi['slug']?>">	 -->
+                        <!-- <embed src="./asset/img/logo.png" type="">	 -->
                     </div>
                 </a>
             </div>
@@ -129,7 +146,7 @@
                         <span class="d">D</span>
                         <span class="y">y</span>
                         <span class="c">C</span>
-                        <!-- <embed src="./asset/img/logo.png" alt="<?=$dataSi['slug']?>">	 -->
+                        <!-- <embed src="./asset/img/logo.png" type="">	 -->
                     </div>
                 </a>
             </div>
@@ -152,7 +169,7 @@
                             <span class="d">D</span>
                             <span class="y">y</span>
                             <span class="c">C</span>
-                            <!-- <embed src="./asset/img/logo.png" alt="<?=$dataSi['slug']?>">	 -->
+                            <!-- <embed src="./asset/img/logo.png" type="">	 -->
                         </div>
                     </a>
                 </div>
@@ -229,7 +246,7 @@
                 </div>
             </div>
             <!-- <div class="titre portrait reveal-1">
-                <embed class="reveal" src="./asset/img/mon_portrai.png" alt="<?=$dataSi['slug']?>">
+                <embed class="reveal" src="./asset/img/mon_portrai.png" type="">
             </div> -->
             <script>
                 
@@ -244,8 +261,8 @@
         <!-- Image portrait en font d ecran -->
         <div class="imagefont">
             <div class="ddrt">
-                <embed id='i11' src="./asset/img/1.png" alt="<?=$dataSi['slug']?>">
-                <embed id='i22' src="./asset/img/2.png" alt="<?=$dataSi['slug']?>">
+                <embed id='i11' src="./asset/img/1.png" type="">
+                <embed id='i22' src="./asset/img/2.png" type="">
             </div>
         </div>
         <div id="about"></div>
@@ -266,8 +283,8 @@
             <div class="about reveal">
                 <div class="left">
                     <div class="img">
-                        <embed src="./asset/img/tapette.png" id="i1" height="100%" alt="<?=$dataSi['slug']?>">
-                        <embed src="./asset/img/mon_portrai.png" id="i2" height="100%" alt="<?=$dataSi['slug']?>">
+                        <embed src="./asset/img/tapette.png" id="i1" height="100%" type="">
+                        <embed src="./asset/img/mon_portrai.png" id="i2" height="100%" type="">
                     </div>
                     <div class="experience">
                         <div class="text">
@@ -279,7 +296,7 @@
                     <script>
                         let timer = document.getElementById('timeXP');
                         let date_debut = 2021;
-                        const date_fin = new Date().getFullYear();
+                        let date_fin = 2024;
                         Txp = date_fin - date_debut;
                         timer.innerHTML= '0' + Txp;
                     </script>
@@ -444,7 +461,7 @@
                                         ?>
                                         
                                     </div>
-                                    <img src="./asset/projet/<?=$dataP['image']?>" alt="<?=$dataSi['slug']?>">
+                                    <img src="./asset/projet/<?=$dataP['image']?>" alt="">
                                     <div class="taille transform">
                                         <div class="texxt">
                                             <div class="t11">
@@ -517,7 +534,7 @@
                                 <div class="bosd swiper-slide">
                                     <div>
                                         <div class="imgxxc">
-                                            <embed src="./asset/temoin/<?=$dataTn['image']?>" alt="<?=$dataSi['slug']?>" >
+                                            <embed src="./asset/temoin/<?=$dataTn['image']?>" type="">
                                         </div>
                                     </div>
                                     
@@ -579,7 +596,7 @@
                             <div class="content">
                             
                                 <div style="width: 100%;height: 5cm;">
-                                    <img src="./asset/blog/<?=$dataB['image']?>" style="width: 100%;height: 100%;opacity: 90%;" alt="<?=$dataSi['slug']?>" srcset="">
+                                    <img src="./asset/blog/<?=$dataB['image']?>" style="width: 100%;height: 100%;opacity: 90%;" alt="" srcset="">
                                 </div>   
                                 <div class="infos">
                                         <span class="title">
@@ -609,14 +626,14 @@
         <?php
             require './view/footer.php';
         ?>
-        <script src="js/cv.js"></script>
-        <script src="js/theme.js"></script>
-        <script src="js/swiper-bundle.min.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/scroll.js"></script>
-        <script src="js/jquery.js"></script>
-        <script src="js/form.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <script src="../js/cv.js"></script>
+        <script src="../js/theme.js"></script>
+        <script src="../js/swiper-bundle.min.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/scroll.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/form.js"></script>
+        <script src="../js/bootstrap.js"></script>
 </div>
     
     
