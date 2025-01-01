@@ -5,7 +5,7 @@ FROM php:8.0-apache
 RUN docker-php-ext-install pdo pdo_mysql
 
 # Copier tous les fichiers de votre projet dans le répertoire web d'Apache
-COPY . /var/www/dycathecorde/index/php
+COPY . /var/www/DYCATHECORDE
 
 # Exposer le port 80
 EXPOSE 80
