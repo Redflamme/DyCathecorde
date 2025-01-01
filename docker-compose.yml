@@ -2,35 +2,16 @@ version: '3.8'
 
 services:
   php-apache:
-    image: php:8.0-apache
-    container_name: php-apache
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:80" # Accès au serveur PHP/Apache via localhost:8080
+      - "8080:80"
     volumes:
-      - .:/var/www/html # Monte ton projet dans le conteneur
+      - .:/var/www/html
     environment:
-      DB_HOST: db # L'adresse de l'hôte pour MySQL
-      DB_NAME: dyc_db # Nom de la base de données
-      DB_USER: DyCathecorde # Utilisateur MySQL
-      DB_PASSWORD: Metal@slug2 # Mot de passe MySQL
-      DB_CHARSET: utf8 # Jeu de caractères
-
-  db:
-    image: mysql:8.0
-    container_name: mysql-db
-    restart: always
-    ports:
-      - "3306:3306" # Port pour accéder à MySQL
-    environment:
-      MYSQL_ROOT_PASSWORD: root # Mot de passe root
-      MYSQL_DATABASE: dyc_db # Création de la base de données initiale
-      MYSQL_USER: DyCathecorde # Utilisateur de la base de données
-      MYSQL_PASSWORD: Metal@slug2 # Mot de passe utilisateur
-    volumes:
-      - db_data:/var/lib/mysql # Persistance des données
-
-volumes:
-  db_data:
+      DB_HOST: dpg-ctnhuqtumphs73c6vp5g-a.frankfurt-postgres.render.com
+      DB_PORT: 5432
+      DB_NAME: dyc_db
+      DB_USER: dyc_db_user
+      DB_PASSWORD: I8kdf3ax665bQJDfrte5GAicRpTMMeGt
