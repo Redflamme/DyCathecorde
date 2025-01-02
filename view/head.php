@@ -1,3 +1,8 @@
+<?php
+if (!isset($_COOKIE['user_visited'])) {
+    setcookie('user_visited', true, time() + (365 * 24 * 60 * 60)); // Avant toute sortie
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
