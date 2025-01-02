@@ -20,7 +20,7 @@ $service = $bdd->query("SELECT * FROM service ORDER BY id DESC");
 
 //blog
 
-$blog = $bdd->query("SELECT * FROM blog ORDER BY RAND() LIMIT 3");
+$blog = $bdd->query("SELECT * FROM blog LIMIT 3");
 
 if (isset($_GET['ipop'])) {
     
