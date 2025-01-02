@@ -20,7 +20,7 @@ $service = $bdd->query("SELECT * FROM service ORDER BY id DESC");
 
 //blog
 
-$blog = $bdd->query("SELECT * FROM blog LIMIT 3");
+$blog = $bdd->query("SELECT * FROM blog ORDER BY RANDOM() LIMIT 3");
 
 if (isset($_GET['ipop'])) {
     
@@ -36,7 +36,7 @@ if (isset($_GET['ipop'])) {
             $admins = $bdd->query('SELECT image,nom FROM admin WHERE id_adm='. $dataBs['id_adm'] .' ');
             $dataAdx = $admins->fetch();
         
-            $LS = $bdd->query('SELECT * FROM blog WHERE id != '. $dataBs['id_adm'] .' ORDER BY RAND() LIMIT 3');
+            $LS = $bdd->query('SELECT * FROM blog WHERE id != '. $dataBs['id_adm'] .' ORDER BY RANDOM() LIMIT 3');
             $rose = false;
 }else {
             $rose = true;
