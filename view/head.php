@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dycathecode</title>
+    <title><?=$dataSi['auteur']?></title>
     <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome.min.css">
     <link rel="stylesheet" href="web-fonts-with-css/css/all.min.css">
     <link rel="stylesheet" href="web-fonts-with-css/css/all.css">
