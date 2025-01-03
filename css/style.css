@@ -313,7 +313,7 @@ footer .left .text .t1{font-size: 20px;margin-bottom: 0.5cm;}
 footer .left .text .t2{font-size: 12px;}
 
 footer .left .classes{display: flex;width: 5.3cm;margin-bottom: 0.5cm;}
-footer .icon{display: flex;width:0.7cm;height: 0.7cm;border-radius: 50%;border: 1px solid var(--grisxx);justify-content: center;align-items: center;}
+footer .icon{display: flex;width:0.7cm;height: 0.7cm;border-radius: 50%;border: 1px solid var(--grisxx);justify-content: center;align-items: center;padding: 6px;}
 footer embed{width: 50%;}
 
 footer .left .classes .text-icon{margin-left: 10px;}

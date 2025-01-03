@@ -15,3 +15,5 @@ html {scroll-behavior: smooth;transition: .3s;}
 .dark-body{--vert:rgb(0, 235, 39);--vert2:rgb(0, 134, 22);--noire:#000000;--blanc:#fff;--orange:#ff4800;--orange2:#c23700;--gris:#707070;--tposition:1cm;--rposition:1cm;--noire_transparent:rgba(0, 0, 0, 0.685);--footer:#111111;--transparence: linear-gradient(to top,hwb(0 0% 100% / 0.42) 20%, hwb(0 0% 100% / 0.3) 50%);--grisxx:#5e5e5e;--border:rgb(59, 59, 59) ;}
 
 .noscroll{overflow: none;}
+
+a{text-decoration: none;}
