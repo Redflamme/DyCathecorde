@@ -190,6 +190,7 @@
 
 
 <script src="../js/theme.js"></script>
+<script src="../js/app.js"></script>
 <!-- <script src="../js/scroll.js"></script> -->
     
     
