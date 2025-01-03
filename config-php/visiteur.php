@@ -1,9 +1,11 @@
 <?php
+// Activer la mise en mémoire tampon pour éviter les erreurs de sortie
+ob_start();
 
 // Vérification si l'utilisateur a déjà visité le site via un cookie
 if (isset($_COOKIE['user_visited'])) {
-    
-}else {
+    // L'utilisateur a déjà visité le site, aucune action nécessaire
+} else {
     // Récupération des informations du navigateur
     function getBrowserInfo() {
         $userAgent = $_SERVER['HTTP_USER_AGENT'];
@@ -39,15 +41,14 @@ if (isset($_COOKIE['user_visited'])) {
         // Exécuter la requête
         if ($query->execute()) {
             // Si l'enregistrement est réussi, définir un cookie pour indiquer que l'utilisateur a visité
-            setcookie('user_visited', true, time() + (365 * 24 * 60 * 60)); // Cookie valide pour 1 an
-            // echo "Visite enregistrée avec succès.";
-        } else {
-            // echo "Erreur lors de l'enregistrement de la visite.";
+            setcookie('user_visited', true, time() + (365 * 24 * 60 * 60), '/'); // Cookie valide pour 1 an
         }
     } catch (PDOException $e) {
-        // echo "Erreur de base de données : " . $e->getMessage();
+        // Gestion des erreurs de base de données (optionnel)
+        error_log("Erreur de base de données : " . $e->getMessage());
     }    
 }
 
-
+// Fin de la mise en mémoire tampon et envoi des données
+ob_end_flush();
 ?>
