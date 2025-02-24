@@ -1,79 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drop Zone</title>
-  <style>
-    
-    .drop-zone {
-      width: 300px;
-      height: 200px;
-      border: 2px dashed #007BFF;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: #007BFF;
-      text-align: center;
-      transition: background-color 0.3s;
-    }
-    .drop-zone.dragover {
-      background-color: #e0f7ff;
-    }
-    .file-name {
-      margin-top: 10px;
-      color: #333;
-      font-size: 14px;
-      word-break: break-word;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réduction de poids d'image</title>
 </head>
 <body>
-  <div class="drop-zone" id="dropZone">
-    Glissez et déposez un fichier ici, ou cliquez pour le sélectionner.
-    <input type="file" id="fileInput" style="display: none;" />
-    <div class="file-name" id="fileName"></div>
-  </div>
-
-  <script>
-    const dropZone = document.getElementById('dropZone');
-    const fileInput = document.getElementById('fileInput');
-    const fileNameDisplay = document.getElementById('fileName');
-
-    // Empêche le comportement par défaut lors du glisser-déposer
-    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-      dropZone.addEventListener(eventName, (e) => e.preventDefault());
-    });
-
-    // Ajoute une classe visuelle lors du glissement
-    ['dragenter', 'dragover'].forEach(eventName => {
-      dropZone.addEventListener(eventName, () => dropZone.classList.add('dragover'));
-    });
-
-    ['dragleave', 'drop'].forEach(eventName => {
-      dropZone.addEventListener(eventName, () => dropZone.classList.remove('dragover'));
-    });
-
-    // Gère le fichier déposé
-    dropZone.addEventListener('drop', (e) => {
-      const files = e.dataTransfer.files;
-      displayFileName(files);
-    });
-
-    // Clique pour sélectionner un fichier
-    dropZone.addEventListener('click', () => fileInput.click());
-    fileInput.addEventListener('change', () => displayFileName(fileInput.files));
-
-    function displayFileName(files) {
-      const file = files[0];
-      if (file) {
-        fileNameDisplay.textContent = `Fichier sélectionné : ${file.name}`;
-      } else {
-        fileNameDisplay.textContent = "Aucun fichier sélectionné.";
-      }
-    }
-  </script>
+    <h1>Image compressée automatiquement</h1>
+    <img id="outputImg" alt="Image compressée apparaîtra ici">
+    <script src="script.js"></script>
 </body>
+
+<script>
+  // Charger l'image et réduire son poids au chargement de la page
+const outputImg = document.getElementById("outputImg");
+const outputImg2 = document.getElementById("outputImg2");
+
+// Fonction pour réduire le poids de l'image
+function reduceImageSizeOnLoad(imageSrc, quality = 0.7, maxWidth = 500, maxHeight = 500) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+
+        img.onload = () => {
+            const canvas = document.createElement("canvas");
+            let width = img.width;
+            let height = img.height;
+
+            // Ajuster la taille en fonction des dimensions maximales
+            if (width > maxWidth || height > maxHeight) {
+                if (width > height) {
+                    height = (maxWidth / width) * height;
+                    width = maxWidth;
+                } else {
+                    width = (maxHeight / height) * width;
+                    height = maxHeight;
+                }
+            }
+
+            canvas.width = width;
+            canvas.height = height;
+
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0, width, height);
+
+            canvas.toBlob(
+                (blob) => {
+                    resolve(blob);
+                },
+                "image/png",
+                quality
+            );
+        };
+
+        img.onerror = (err) => reject(err);
+        img.src = imageSrc;
+    });
+}
+
+// Réduire l'image au chargement
+window.addEventListener("load", async () => {
+    const imageSrc = "./asset/img/1e.png"; // Chemin vers l'image originale
+    const imageSrc2 = "./asset/img/1e.png"; // Chemin vers l'image originale
+
+    try {
+        const compressedBlob = await reduceImageSizeOnLoad(imageSrc);
+        const compressedBlob2 = await reduceImageSizeOnLoad(imageSrc2);
+
+        // Mettre à jour l'image dans l'élément <img>
+        const compressedURL = URL.createObjectURL(compressedBlob);
+        const compressedURL2 = URL.createObjectURL(compressedBlob2);
+        outputImg.src = compressedURL;
+        outputImg2.src = compressedURL2;
+
+        console.log("Image compressée avec succès !");
+    } catch (err) {
+        console.error("Erreur lors de la compression de l'image :", err);
+    }
+});
+
+</script>
 </html>

@@ -6,7 +6,6 @@ try {
     $dbname = "dyc_db";
     $username = "dyc_db_user";
     $password = "I8kdf3ax665bQJDfrte5GAicRpTMMeGt";
-
     // DSN pour PostgreSQL
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
 

@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dycathecorde</title>
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome.min.css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/all.min.css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/all.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/compossants.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablette.css">
+    <link rel="stylesheet" href="css/boostrap.css">
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.css">
+    <!-- <script src="./js/jquery.js"></script> -->
+    <link rel="shortcut icon" href="./asset/icon/logo.ico">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Développeur web design",
+            "description": "Développeur web design",
+            "image": "https://dyc-c6rx.onrender.com/asset/icon/logo.ico",
+            "author": {
+                "@type": "Person",
+                "name": "Junior sineno"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Junior sineno",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://dyc-c6rx.onrender.com/asset/icon/logo.ico"
+                }
+            },
+            "datePublished": "2024-07-15",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://dyc-c6rx.onrender.com//pages/blog.php"
+            }
+        }
+    </script>
+</head>
+<div class="background"></div>
+<div class="containerxx "></div>
+<div class="cvo">
+    <div class="e-cardx playingx" >
+        <div class="image"></div>
+        
+        <div class="wavex"></div>
+        <div class="wavex"></div>
+        <div class="wavex"></div>
+    </div>    
+</div>
+<body class="body noscroll" id="top">
+
+    <div class="loader">
+
+        <div class="container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+    </div>
+
+    <div class="notification " id="notification">
+        <div class="bs-toast toast fade show bg-success mood" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="bx bx-bell me-2"></i>
+            <div class="me-auto fw-semibold">Succes</div>
+                <small>aujourd'hui</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Merci pour votre message nous vous contacterons bientôt.
+            </div>
+            <div class="bar_tim" id="positif">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="notificationx">
+        <div class="bs-toast toast fade show bg-danger mood" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <i class="bx bx-bell me-2"></i>
+              <div class="me-auto fw-semibold">Echec</div>
+              <small>aujourd'hui</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Vérifier votre connection internet.
+            </div>
+            <div class="bar_tim" id="negatif">
+                
+            </div>              
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <!-- NAV -->
+        <nav class="padding" id="nav1">
+            <div class="left">
+                <a href="./index.html">
+                    <div class="logo">
+                        <span class="d">D</span>
+                        <span class="y">y</span>
+                        <span class="c">C</span>
+                        <!-- <embed src="./asset/img/logo.png" alt="<?=$dataSi['slug']?>">	 -->
+                    </div>
+                </a>
+            </div>
+            <div class="btn-barre" onclick="btn_menu()">
+                <div class="bar-verticale"></div>
+            </div>
+            <div class="right menu">
+                <ul class="ul">
+                    <div onclick="about()">
+                        <button class="item bt" >À propos</button>
+                    </div>
+                    <div href="#" onclick="services()">
+                        <button class="item bt" >Services</button>
+                    </div>
+                    <div href="#" onclick="portfolio()">
+                        <button class="item bt">Projets</button>
+                    </div>
+                    <div href="#" onclick="termoignage()">    
+                        <button class="item bt">Témoignages</button>
+                    </div>
+                    <div href="#"  onclick="blog()">
+                        <button class="item bt">Blogs</button>
+                    </div>
+                    <div href="#"  onclick="contactus()">
+                        <button class="item bt">Contact</button>
+                    </div>
+                    <div class="checkbox-wrapper-51" style="transform: translateY(40px)">
+                        <input id="cbx-51" type="checkbox" onclick="theme_change()">
+                        <label class="toggle" for="cbx-51">
+                            <span>
+                            <svg viewBox="0 0 10 10" height="10px" width="10px">
+                                <path d="M5,1 L5,1 C2.790861,1 1,2.790861 1,5 L1,5 C1,7.209139 2.790861,9 5,9 L5,9 C7.209139,9 9,7.209139 9,5 L9,5 C9,2.790861 7.209139,1 5,1 L5,9 L5,1 Z"></path>
+                            </svg>
+                            </span>
+                        </label>
+                    </div>
+
+
+
+                    
+                </ul>
+                
+            </div>
+        </nav>
+
+        <nav class="padding" id="nav2">
+            <div class="left">
+                <a href="./index.php">
+                    <div class="logo">
+                        <span class="d">D</span>
+                        <span class="y">y</span>
+                        <span class="c">C</span>
+                        <!-- <embed src="./asset/img/logo.png" alt="<?=$dataSi['slug']?>">	 -->
+                    </div>
+                </a>
+            </div>
+            
+            <div class="right menu">
+                <ul class="ul">
+                    <button class="btn btn-primary" type="button" style="font-size: 28px;color: var(--orange);transform: translateY(15px);" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStartLabel" style="visibility: visible;background: var(--noire);" aria-modal="true" role="dialog">
+            <div class="offcanvas-header" style="border-bottom:1px solid var(--border) ;">
+                <div class="logo" style="transform: translateY(-24px);">
+                    <a href="./index.php">
+                        <div class="logo">
+                            <span class="d">D</span>
+                            <span class="y">y</span>
+                            <span class="c">C</span>
+                            <!-- <embed src="./asset/img/logo.png" alt="<?=$dataSi['slug']?>">	 -->
+                        </div>
+                    </a>
+                </div>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="nan" style="overflow-y: scroll;height: 100%;">
+                <div>
+                    <button onclick="about()" class="bvb" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" onclick="b1()">
+                        À propos
+                    </button>
+                </div>
+                <div>
+                    <button onclick="services()" class="bvb" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" onclick="b2()">
+                        Services
+                    </button>
+                </div>
+                <div>
+                    <button class="bvb" onclick="portfolio()" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">
+                        Projets
+                    </button>
+                </div>
+                <div>
+                    <button class="bvb" onclick="termoignage()" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">
+                        Témoignages
+                    </button>
+                </div>
+                <div>
+                    <button class="bvb" onclick="blog()" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">
+                        Blogs
+                    </button>
+                </div>
+                <div>
+                    <button class="bvb" onclick="contactus()" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">
+                        Contact
+                    </button>
+                </div>
+                <div class="padding" style="display: flex;justify-content: space-between;line-height: 80px;">
+                    <div >
+                        <div  style="display: flex;align-items: flex-end;justify-content: center;">
+                            <span style="color: var(--blanc);letter-spacing: 1px;text-transform: uppercase;font-size: 13px;">
+                                Mode
+                            </span>
+                        </div>
+                    </div>
+                    <div style="display: flex;align-items: center;">
+                        <input class="switch" type="checkbox" onclick="theme_change()" checked="true">
+                    </div>
+                </div>
+            </div>
+          </div>
+        <!-- Presentation -->
+        <div class="presentation">
+            <div class="titre">
+                <div class="element e1 reveal-1">
+                    <div class="suis">
+                        Salut, je suis
+                    </div>
+                </div>
+
+                
+
+                <div class="element e2 reveal-2">
+                    <div class="text">M. Junior <span class="tom">sineno</span></div>
+                </div>
+                <div class="element e4 reveal-3">
+                    Développeur Web design.
+                </div>
+                <div class="element e3 reveal-4">
+                        <button class="button" onclick="telechargerFichier()">
+                            Télécharger mon CV
+                        </button>
+                        
+
+                </div>
+            </div>
+            <!-- <div class="titre portrait reveal-1">
+                <embed class="reveal" src="./asset/img/mon_portrai.png" alt="<?=$dataSi['slug']?>">
+            </div> -->
+            <script>
+                
+            </script>
+        </div>
+        <div class="indicateur">
+            <div class="bord">
+                <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <!-- Image portrait en font d ecran -->
+        <div class="imagefont">
+            <div class="ddrt">
+                <embed id='i11' src="./asset/img/1.png" alt="<?=$dataSi['slug']?>">
+                <embed id='i22' src="./asset/img/2.png" alt="<?=$dataSi['slug']?>">
+            </div>
+        </div>
+        
+        <div id="about"></div>
+    </header>
+
+<div class="bbbxxx" style="background-color: var(--noire);transition: .3s background;">
+        <!-- Section -->
+        <section>
+            <!-- A propos -->
+            <div class="dashed">
+                    <div class="trait"></div>
+                </div>
+                <div class="text-align-center">
+                    <div class="titre reveal-1">
+                        À propos
+                    </div>
+                </div>
+            <div class="about reveal">
+                <div class="left">
+                    <div class="img">
+                        <embed src="./asset/img/tapette.png" id="i1" height="100%" alt="<?=$dataSi['slug']?>">
+                        <embed src="./asset/img/mon_portrai.png" id="i2" height="100%" alt="<?=$dataSi['slug']?>">
+                    </div>
+                    <div class="experience">
+                        <div class="text">
+                            <div class="txtxx" id='timeXP'>03</div>
+                            <div class="txtxx">Années d’expérience</div>
+                        </div>
+                    </div>
+
+                    <script>
+                        let timer = document.getElementById('timeXP');
+                        let date_debut = 2021;
+                        const date_fin = new Date().getFullYear();
+                        Txp = date_fin - date_debut;
+                        timer.innerHTML= '0' + Txp;
+                    </script>
+
+                </div>
+                
+                <div class="right" id="ici1">
+                    <div class="t0">
+                        <div class="t1 align">
+                            À propos de moi!
+                        </div>
+                        <p class="t2 align">
+                            Développeur web spécialisé en HTML, CSS, JavaScript (JS) et PHP, j'ai acquis une solide expertise dans la création d'interfaces utilisateur attrayantes et réactives. Mon expérience dans la conception et le développement de sites web me permet de créer des expériences utilisateur conviviales et intuitives. Je suis passionné par l'optimisation des performances et le respect des normes de codage. Mon objectif principal est de fournir des solutions web de haute qualité qui répondent aux besoins des utilisateurs tout en respectant les délais et les exigences du projet.
+                        </p>
+                    </div>
+                    <div class="level">
+                        <div class="lvl">
+                            <div class="text">HTML <span id="html"></span></div>
+                            <div class="bar">
+                                <div class="remplir html" ></div>
+                            </div>
+                        </div>
+                        <div class="lvl">
+                            <div class="text">CSS <span id="css"></span></div>
+                            <div class="bar">
+                                <div class="remplir css" title="100%" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="lvl">
+                            <div class="text">JS <span id="js"></span></div>
+                            <div class="bar">
+                                <div class="remplir js" title="100%" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                        <div class="lvl">
+                            <div class="text">PHP <span id="php"></span></div>
+                            <div class="bar">
+                                <div class="remplir php" title="100%" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="lvl">
+                            <div class="text">jQuery <span id="jquery"></span></div>
+                            <div class="bar">
+                                <div class="remplir jquery" title="100%" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+            </div>
+            <!-- Mes services -->
+            <div class="mes-services padding" id="services">
+                
+                <div class="box-content reveal">
+
+
+                    <div class="ser htmls">
+                        <div class="box">
+                            <div class="icon">                            
+                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99999 5C7.69206 5 7.4013 5.14187 7.21179 5.38459C7.02228 5.6273 6.95517 5.94379 7.02985 6.24254L8.02985 10.2425C8.14114 10.6877 8.54113 11 8.99999 11H13.8C13.9105 11 14 11.0895 14 11.2V13.5029C14 13.556 13.9789 13.6069 13.9414 13.6444L12.1414 15.4444C12.0633 15.5225 11.9367 15.5225 11.8586 15.4444L9.7071 13.2929C9.31658 12.9024 8.68341 12.9024 8.29289 13.2929C7.90236 13.6834 7.90236 14.3166 8.29289 14.7071L11.2929 17.7071C11.6834 18.0976 12.3166 18.0976 12.7071 17.7071L15.7071 14.7071C15.8946 14.5196 16 14.2652 16 14V10C16 9.44772 15.5523 9 15 9H9.93693C9.84515 9 9.76516 8.93754 9.7429 8.84851L9.3429 7.24851C9.31134 7.12228 9.40681 7 9.53693 7H16C16.5523 7 17 6.55228 17 6C17 5.44772 16.5523 5 16 5H7.99999Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.30601 1C2.48037 1 1.07798 2.61696 1.33617 4.42426L2.90518 15.4074C3.00667 16.1178 3.35945 16.7683 3.89952 17.2409L10.0245 22.6002C11.1556 23.5899 12.8444 23.5899 13.9755 22.6002L20.1005 17.2409C20.6405 16.7683 20.9933 16.1178 21.0948 15.4074L22.6638 4.42426C22.922 2.61696 21.5196 1 19.694 1H4.30601ZM3.31606 4.14142C3.23 3.53899 3.69746 3 4.30601 3H19.694C20.3025 3 20.77 3.53899 20.6839 4.14142L19.1149 15.1245C19.0811 15.3613 18.9635 15.5782 18.7835 15.7357L12.6585 21.095C12.2815 21.4249 11.7185 21.4249 11.3415 21.095L5.21653 15.7357C5.0365 15.5782 4.91891 15.3613 4.88508 15.1245L3.31606 4.14142Z" />
+                                </svg>
+                            </div>
+                            <div class="texts">
+                                <div class="t1">
+                                    Intégration Front-End
+                                </div>
+                                <div class="t2">
+                                    <svg viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    
+                                                    <title>arrow_right [#336]</title>
+                                                    <desc>Created with Sketch.</desc>
+                                                    <defs>
+
+                                                    </defs>
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="var(--blanc)">
+                                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                    <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]">
+
+                                                    </path>
+                                                            </g>
+                                                        </g>
+                                                        </g>
+                                                </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-col">
+                            <div>
+                                L'intégration Front-End en HTML CSS et JS transforme les maquettes en interfaces fonctionnelles. En structurant le contenu avec HTML et en stylisant avec CSS, elle garantit des sites esthétiques, accessibles et adaptés à tous les appareils.
+                            </div>
+                            <div style="margin-top: 1cm;display: flex;justify-content: center;">
+                                <div class="tr"></div>
+                                <button class="dv htmlc" onclick="contactus()">
+                                    Me contacter
+                                </button>
+                                <div class="tr"></div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.querySelector('.htmls').addEventListener('click', function(){
+                                document.querySelector('.htmls').classList.toggle('actives');
+                            });
+
+                            document.querySelector('.htmlc').addEventListener('click', function(){
+                                document.getElementById('subject').value="HTML";
+                            });
+                        </script>
+                    </div>
+
+                    <div class="ser csss">
+                        <div class="box">
+                            <div class="icon">                                                        
+                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5C7.44772 5 7 5.44772 7 6C7 6.55228 7.44772 7 8 7H12.2344L8.50386 9.13176C8.11017 9.35672 7.91712 9.81842 8.0335 10.2567C8.14988 10.6949 8.54657 11 9 11H13.8C13.9105 11 14 11.0895 14 11.2V13.5029C14 13.556 13.9789 13.6069 13.9414 13.6444L12.1414 15.4444C12.0633 15.5225 11.9367 15.5225 11.8586 15.4444L9.70711 13.2929C9.31658 12.9024 8.68342 12.9024 8.2929 13.2929C7.90237 13.6834 7.90237 14.3166 8.2929 14.7071L11.2929 17.7071C11.6834 18.0976 12.3166 18.0976 12.7071 17.7071L15.7071 14.7071C15.8946 14.5196 16 14.2652 16 14V10C16 9.44772 15.5523 9 15 9H12.7656L16.4961 6.86824C16.8898 6.64328 17.0829 6.18158 16.9665 5.74333C16.8501 5.30509 16.4534 5 16 5H8Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.30602 1C2.48038 1 1.07799 2.61696 1.33617 4.42426L2.90519 15.4074C3.00668 16.1178 3.35946 16.7683 3.89953 17.2409L10.0245 22.6002C11.1556 23.5899 12.8444 23.5899 13.9755 22.6002L20.1005 17.2409C20.6405 16.7683 20.9933 16.1178 21.0948 15.4074L22.6638 4.42426C22.922 2.61696 21.5196 1 19.694 1H4.30602ZM3.31607 4.14142C3.23001 3.53899 3.69747 3 4.30602 3H19.694C20.3025 3 20.77 3.53899 20.6839 4.14142L19.1149 15.1245C19.0811 15.3613 18.9635 15.5782 18.7835 15.7357L12.6585 21.095C12.2815 21.4249 11.7185 21.4249 11.3415 21.095L5.21653 15.7357C5.03651 15.5782 4.91892 15.3613 4.88509 15.1245L3.31607 4.14142Z"/>
+                                </svg>
+                            </div>
+                            <div class="texts">
+                                <div class="t1">
+                                    Responsive Design
+                                </div>
+                                <div class="t2">
+                                    <svg viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    
+                                                    <title>arrow_right [#336]</title>
+                                                    <desc>Created with Sketch.</desc>
+                                                    <defs>
+
+                                                    </defs>
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="var(--blanc)">
+                                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                    <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]">
+
+                                                    </path>
+                                                            </g>
+                                                        </g>
+                                                        </g>
+                                                </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-col">
+                            <div>
+                                CSS	Le responsive design en CSS garantit une adaptation parfaite des sites web à tous les écrans. Grâce à des techniques comme les media queries et les unités flexibles, il optimise l’affichage sur mobiles, tablettes et ordinateurs.
+                            </div>
+                            <div style="margin-top: 1cm;display: flex;justify-content: center;">
+                                <div class="tr"></div>
+                                <button class="dv cssc" onclick="contactus()">
+                                    Me contacter
+                                </button>
+                                <div class="tr"></div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.querySelector('.csss').addEventListener('click', function(){
+                                document.querySelector('.csss').classList.toggle('actives');
+                            });
+
+                            document.querySelector('.cssc').addEventListener('click', function(){
+                                document.getElementById('subject').value="CSS";
+                            });
+                        </script>
+                    </div>
+                    <div class="ser jss">
+                        <div class="box">
+                            <div class="icon">                                                        
+                                <svg width="25px" height="26px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path  fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm13.8-2.6a1 1 0 0 0-1.6 1.2l1.05 1.4-1.05 1.4a1 1 0 0 0 1.6 1.2l.7-.933.7.933a1 1 0 0 0 1.6-1.2L16.75 12l1.05-1.4a1 1 0 0 0-1.6-1.2l-.7.933-.7-.933zM8 10a1 1 0 1 0-2 0v2c0 .493.14 1.211.588 1.834C7.074 14.51 7.874 15 9 15s1.926-.492 2.412-1.166c.448-.623.588-1.34.588-1.834v-2a1 1 0 1 0-2 0v2c0 .173-.06.456-.212.666-.114.159-.314.334-.788.334-.474 0-.674-.175-.788-.334A1.239 1.239 0 0 1 8 12v-2z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div class="texts">
+                                <div class="t1">
+                                    Design UX/UI (Expérience et Interface Utilisateur)
+                                </div>
+                                <div class="t2">
+                                    <svg viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    
+                                                    <title>arrow_right [#336]</title>
+                                                    <desc>Created with Sketch.</desc>
+                                                    <defs>
+
+                                                    </defs>
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="var(--blanc)">
+                                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                    <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]">
+
+                                                    </path>
+                                                            </g>
+                                                        </g>
+                                                        </g>
+                                                </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-col">
+                            <div>
+                                UX-UI	Le design UX/UI combine esthétique et expérience utilisateur. Il crée des interfaces intuitives, fluides et engageantes. En analysant les besoins des utilisateurs, il optimise l’interaction et améliore la satisfaction, favorisant ainsi l’engagement et la conversion.
+                            </div>
+                            <div style="margin-top: 1cm;display: flex;justify-content: center;">
+                                <div class="tr"></div>
+                                <button class="dv jsc" onclick="contactus()">
+                                    Me contacter
+                                </button>
+                                <div class="tr"></div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.querySelector('.jss').addEventListener('click', function(){
+                                document.querySelector('.jss').classList.toggle('actives');
+                            });
+
+                            document.querySelector('.jsc').addEventListener('click', function(){
+                                document.getElementById('subject').value="JavaScript";
+                            });
+                        </script>
+                    </div>
+                    <div class="ser phps">
+                        <div class="box">
+                            <div class="icon">                                                                                    
+                                <?xml version="1.0" encoding="utf-8"?>
+    
+                                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="25px" height="25px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path  d="M10.372 13.069h-3.967l-1.715 8.684h2.037l0.429-2.251h1.93c1.822 0.107 3.86-1.394 3.86-3.967 0-1.501-0.858-2.359-2.573-2.466zM8.871 17.894h-1.287l0.536-3.216h1.394c0.75 0 1.287 0.322 1.287 0.965-0.107 1.823-0.965 2.144-1.93 2.251zM17.555 13.069h-1.93l0.429-2.251h-2.037l-1.715 8.684h2.037l0.965-4.824h1.608c0.751 0 0.751 0.322 0.643 0.858l-0.75 3.967h2.144l0.75-4.396c0.214-1.072-0.429-1.93-2.144-2.037zM24.738 13.069h-3.967l-1.715 8.684h2.037l0.429-2.251h1.93c1.823 0.107 3.86-1.394 3.86-3.967 0-1.501-0.858-2.359-2.573-2.466zM23.237 17.894h-1.287l0.536-3.216h1.394c0.751 0 1.287 0.322 1.287 0.965-0.107 1.823-0.965 2.144-1.93 2.251z"></path>
+                                </svg>
+                            </div>
+                            <div class="texts">
+                                <div class="t1">
+                                    Backend  dev (Php,laravel)
+                                </div>
+                                <div class="t2">
+                                    <svg viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    
+                                                    <title>arrow_right [#336]</title>
+                                                    <desc>Created with Sketch.</desc>
+                                                    <defs>
+
+                                                    </defs>
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="var(--blanc)">
+                                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                    <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]">
+
+                                                    </path>
+                                                            </g>
+                                                        </g>
+                                                        </g>
+                                                </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-col">
+                            <div>
+                                PHP	Le développement backend avec PHP et Laravel se concentre sur la gestion des données et la logique métier. Laravel, avec son framework robuste, simplifie la création d’API, l’authentification, et les opérations CRUD, garantissant sécurité et performance.
+                            </div>
+                            <div style="margin-top: 1cm;display: flex;justify-content: center;">
+                                <div class="tr"></div>
+                                <button class="dv phpc" onclick="contactus()">
+                                    Me contacter
+                                </button>
+                                <div class="tr"></div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.querySelector('.phps').addEventListener('click', function(){
+                                document.querySelector('.phps').classList.toggle('actives');
+                            });
+
+                            document.querySelector('.phpc').addEventListener('click', function(){
+                                document.getElementById('subject').value="php";
+                            });
+                        </script>
+                    </div>
+                    <div class="ser sqls">
+                        <div class="box">
+                            <div class="icon">                                                        
+                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg  width="25px" height="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m24.129 23.412-.508-.484c-.251-.331-.518-.624-.809-.891l-.005-.004q-.448-.407-.931-.774-.387-.266-1.064-.641c-.371-.167-.661-.46-.818-.824l-.004-.01-.048-.024c.212-.021.406-.06.592-.115l-.023.006.57-.157c.236-.074.509-.122.792-.133h.006c.298-.012.579-.06.847-.139l-.025.006q.194-.048.399-.109t.351-.109v-.169q-.145-.217-.351-.496c-.131-.178-.278-.333-.443-.468l-.005-.004q-.629-.556-1.303-1.076c-.396-.309-.845-.624-1.311-.916l-.068-.04c-.246-.162-.528-.312-.825-.435l-.034-.012q-.448-.182-.883-.399c-.097-.048-.21-.09-.327-.119l-.011-.002c-.117-.024-.217-.084-.29-.169l-.001-.001c-.138-.182-.259-.389-.355-.609l-.008-.02q-.145-.339-.314-.651-.363-.702-.702-1.427t-.651-1.452q-.217-.484-.399-.967c-.134-.354-.285-.657-.461-.942l.013.023c-.432-.736-.863-1.364-1.331-1.961l.028.038c-.463-.584-.943-1.106-1.459-1.59l-.008-.007c-.509-.478-1.057-.934-1.632-1.356l-.049-.035q-.896-.651-1.96-1.282c-.285-.168-.616-.305-.965-.393l-.026-.006-1.113-.278-.629-.048q-.314-.024-.629-.024c-.148-.078-.275-.171-.387-.279-.11-.105-.229-.204-.353-.295l-.01-.007c-.605-.353-1.308-.676-2.043-.93l-.085-.026c-.193-.113-.425-.179-.672-.179-.176 0-.345.034-.499.095l.009-.003c-.38.151-.67.458-.795.84l-.003.01c-.073.172-.115.371-.115.581 0 .368.13.705.347.968l-.002-.003q.544.725.834 1.14.217.291.448.605c.141.188.266.403.367.63l.008.021c.056.119.105.261.141.407l.003.016q.048.206.121.448.217.556.411 1.14c.141.425.297.785.478 1.128l-.019-.04q.145.266.291.52t.314.496c.065.098.147.179.241.242l.003.002c.099.072.164.185.169.313v.001c-.114.168-.191.369-.217.586l-.001.006c-.035.253-.085.478-.153.695l.008-.03c-.223.666-.351 1.434-.351 2.231 0 .258.013.512.04.763l-.003-.031c.06.958.349 1.838.812 2.6l-.014-.025c.197.295.408.552.641.787.168.188.412.306.684.306.152 0 .296-.037.422-.103l-.005.002c.35-.126.599-.446.617-.827v-.002c.048-.474.12-.898.219-1.312l-.013.067c.024-.063.038-.135.038-.211 0-.015-.001-.03-.002-.045v.002q-.012-.109.133-.206v.048q.145.339.302.677t.326.677c.295.449.608.841.952 1.202l-.003-.003c.345.372.721.706 1.127 1.001l.022.015c.212.162.398.337.566.528l.004.004c.158.186.347.339.56.454l.01.005v-.024h.048c-.039-.087-.102-.157-.18-.205l-.002-.001c-.079-.044-.147-.088-.211-.136l.005.003q-.217-.217-.448-.484t-.423-.508q-.508-.702-.969-1.467t-.871-1.555q-.194-.387-.375-.798t-.351-.798c-.049-.099-.083-.213-.096-.334v-.005c-.006-.115-.072-.214-.168-.265l-.002-.001c-.121.206-.255.384-.408.545l.001-.001c-.159.167-.289.364-.382.58l-.005.013c-.141.342-.244.739-.289 1.154l-.002.019q-.072.641-.145 1.318l-.048.024-.024.024c-.26-.053-.474-.219-.59-.443l-.002-.005q-.182-.351-.326-.69c-.248-.637-.402-1.374-.423-2.144v-.009c-.009-.122-.013-.265-.013-.408 0-.666.105-1.308.299-1.91l-.012.044q.072-.266.314-.896t.097-.871c-.05-.165-.143-.304-.265-.41l-.001-.001c-.122-.106-.233-.217-.335-.335l-.003-.004q-.169-.244-.326-.52t-.278-.544c-.165-.382-.334-.861-.474-1.353l-.022-.089c-.159-.565-.336-1.043-.546-1.503l.026.064c-.111-.252-.24-.47-.39-.669l.006.008q-.244-.326-.436-.617-.244-.314-.484-.605c-.163-.197-.308-.419-.426-.657l-.009-.02c-.048-.097-.09-.21-.119-.327l-.002-.011c-.011-.035-.017-.076-.017-.117 0-.082.024-.159.066-.223l-.001.002c.011-.056.037-.105.073-.145.039-.035.089-.061.143-.072h.002c.085-.055.188-.088.3-.088.084 0 .165.019.236.053l-.003-.001c.219.062.396.124.569.195l-.036-.013q.459.194.847.375c.298.142.552.292.792.459l-.018-.012q.194.121.387.266t.411.291h.339q.387 0 .822.037c.293.023.564.078.822.164l-.024-.007c.481.143.894.312 1.286.515l-.041-.019q.593.302 1.125.641c.589.367 1.098.743 1.577 1.154l-.017-.014c.5.428.954.867 1.38 1.331l.01.012c.416.454.813.947 1.176 1.464l.031.047c.334.472.671 1.018.974 1.584l.042.085c.081.154.163.343.234.536l.011.033q.097.278.217.57.266.605.57 1.221t.57 1.198l.532 1.161c.187.406.396.756.639 1.079l-.011-.015c.203.217.474.369.778.422l.008.001c.368.092.678.196.978.319l-.047-.017c.143.065.327.134.516.195l.04.011c.212.065.396.151.565.259l-.009-.005c.327.183.604.363.868.559l-.021-.015q.411.302.822.57.194.145.651.423t.484.52c-.114-.004-.249-.007-.384-.007-.492 0-.976.032-1.45.094l.056-.006c-.536.072-1.022.203-1.479.39l.04-.014c-.113.049-.248.094-.388.129l-.019.004c-.142.021-.252.135-.266.277v.001c.061.076.11.164.143.26l.002.006c.034.102.075.19.125.272l-.003-.006c.119.211.247.393.391.561l-.004-.005c.141.174.3.325.476.454l.007.005q.244.194.508.399c.161.126.343.25.532.362l.024.013c.284.174.614.34.958.479l.046.016c.374.15.695.324.993.531l-.016-.011q.291.169.58.375t.556.399c.073.072.137.152.191.239l.003.005c.091.104.217.175.36.193h.003v-.048c-.088-.067-.153-.16-.184-.267l-.001-.004c-.025-.102-.062-.191-.112-.273l.002.004zm-18.576-19.205q-.194 0-.363.012c-.115.008-.222.029-.323.063l.009-.003v.024h.048q.097.145.244.326t.266.351l.387.798.048-.024c.113-.082.2-.192.252-.321l.002-.005c.052-.139.082-.301.082-.469 0-.018 0-.036-.001-.054v.003c-.045-.044-.082-.096-.108-.154l-.001-.003-.081-.182c-.053-.084-.127-.15-.214-.192l-.003-.001c-.094-.045-.174-.102-.244-.169z"/></svg>
+                            </div>
+                            <div class="texts">
+                                <div class="t1">
+                                    Conception de base de donnée
+                                </div>
+                                <div class="t2">
+                                    <svg viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    
+                                                    <title>arrow_right [#336]</title>
+                                                    <desc>Created with Sketch.</desc>
+                                                    <defs>
+
+                                                    </defs>
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="var(--blanc)">
+                                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                    <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]">
+
+                                                    </path>
+                                                            </g>
+                                                        </g>
+                                                        </g>
+                                                </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-col">
+                            <div>
+                                Elle consiste à une étude de l'existant par une profonde analyse du processus métier pour l'élaboration de la base de donnée grâce aux SGBD (système de gestion des bases de données).
+                            </div>
+                            <div style="margin-top: 1cm;display: flex;justify-content: center;">
+                                <div class="tr"></div>
+                                <button class="dv sqlc" onclick="contactus()">
+                                    Me contacter
+                                </button>
+                                <div class="tr"></div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.querySelector('.sqls').addEventListener('click', function(){
+                                document.querySelector('.sqls').classList.toggle('actives');
+                            });
+
+                            document.querySelector('.sqlc').addEventListener('click', function(){
+                                document.getElementById('subject').value="sql";
+                            });
+                        </script>
+                    </div>
+
+                    <div class="ser uxs">
+                        <div class="box">
+                            <div class="icon">                                                                                            
+                                <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" fill="black" xmlns:xlink="http://www.w3.org/1999/xlink" \r\n\t width="25px" height="25px" viewBox="0 0 32 32" xml:space="preserve">\r\n<path class="stone_een" d="M15,10h2v2h-2V10z M6.5,10C6.224,10,6,10.224,6,10.5S6.224,11,6.5,11S7,10.776,7,10.5S6.776,10,6.5,10z\r\n\t M21.5,29H20v-2h-8v2h-1.5c-0.276,0-0.5,0.224-0.5,0.5c0,0.276,0.224,0.5,0.5,0.5h11c0.276,0,0.5-0.224,0.5-0.5\r\n\tC22,29.224,21.776,29,21.5,29z M32,7v16c0,1.657-1.343,3-3,3H3c-1.657,0-3-1.343-3-3V7c0-1.657,1.343-3,3-3h26\r\n\tC30.657,4,32,5.343,32,7z M26.966,10.174c-0.12-0.572-0.587-1.03-1.16-1.144c-0.782-0.154-1.475,0.3-1.713,0.97H18V9h-4v1H7.908\r\n\tC7.67,9.33,6.976,8.876,6.195,9.03c-0.573,0.113-1.04,0.572-1.16,1.144C4.83,11.145,5.565,12,6.5,12c0.652,0,1.202-0.419,1.408-1H14\r\n\tv0.224c-4.388,0.897-7.745,4.658-7.986,9.246C5.999,20.757,6.227,21,6.515,21h0c0.263,0,0.484-0.204,0.497-0.467\r\n\tc0.209-4.065,3.134-7.41,6.988-8.289V13h4v-0.757c3.854,0.88,6.779,4.225,6.988,8.289C25.002,20.796,25.222,21,25.485,21h0\r\n\tc0.288,0,0.516-0.243,0.501-0.53c-0.241-4.588-3.598-8.349-7.986-9.246V11h6.092c0.207,0.581,0.756,1,1.408,1\r\n\tC26.435,12,27.17,11.145,26.966,10.174z M25.5,10c-0.276,0-0.5,0.224-0.5,0.5s0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5\r\n\tS25.776,10,25.5,10z"/>\r\n</svg>
+                            </div>
+                            <div class="texts">
+                                <div class="t1">
+                                    Design pour les Applications Web
+                                </div>
+                                <div class="t2">
+                                    <svg viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    
+                                                    <title>arrow_right [#336]</title>
+                                                    <desc>Created with Sketch.</desc>
+                                                    <defs>
+
+                                                    </defs>
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="var(--blanc)">
+                                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                    <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]">
+
+                                                    </path>
+                                                            </g>
+                                                        </g>
+                                                        </g>
+                                                </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-col">
+                            <div>
+                                Le design pour les applications web crée des interfaces intuitives et interactives. Il se concentre sur l’expérience utilisateur, la fluidité des interactions et l’adaptabilité, garantissant une navigation optimale et une efficacité accrue sur diverses plateformes.
+                            </div>
+                            <div style="margin-top: 1cm;display: flex;justify-content: center;">
+                                <div class="tr"></div>
+                                <button class="dv uxc" onclick="contactus()">
+                                    Me contacter
+                                </button>
+                                <div class="tr"></div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.querySelector('.uxs').addEventListener('click', function(){
+                                document.querySelector('.uxs').classList.toggle('actives');
+                            });
+
+                            document.querySelector('.uxc').addEventListener('click', function(){
+                                document.getElementById('subject').value="ux";
+                            });
+                        </script>
+                    </div>
+                            
+                    
+                </div>
+            </div>
+    
+            <div class="dashed" id="portfolio">
+                <div class="trait"></div>
+            </div>
+    
+            <div class="text-align-center padding reveal" >
+                <div class="titre">
+                    Mes Projets
+                </div>
+                <div class="texte" >
+                    Découvrez mes réalisations créatives et innovantes qui mettent en valeur mes compétences en conception et développement web. Explorez mon travail et laissez-vous inspirer par mes projets uniques et captivants.
+                </div>
+            
+            </div>
+            <!-- Mes Projets-->
+            <div class="projets padding" >
+                <div class="contain-box reveal">
+                    <div class="box">
+                        <div style="position: absolute;z-index: 23;transform: translateX(10px) translateY(10px);">
+                            <span class="badge bg-label-warning">En cour</span>
+                        </div>
+                        <embed src="./asset/projet/6.PNG" type="">
+                        <div class="taille transform">
+                            <div class="texxt">
+                                <div class="t11">
+                                    Site Vitrine pour GROUP FAH'SI 
+                                </div>
+                                <div class="t22">
+                                    HTML, CSS, js
+                                </div>
+                                <div class="t33">
+                                   Un site vitrine pour GROUP FAH'SI dans le domaine architectural mettrait en avant l’expertise et les réalisations du groupe, tout en reflétant son professionnalisme.
+                                </div>
+                                <div class="t44">
+                                    <a class="menu__link" href="https://idyllic-mandazi-d5e006.netlify.app">visiter le site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div style="position: absolute;z-index: 23;transform: translateX(10px) translateY(10px);">
+                            <span class="badge bg-label-success">Terminer</span>
+                        </div>
+                        <embed src="./asset/projet/5.png" type="">
+                        <div class="taille transform">
+                            <div class="texxt">
+                                <div class="t11">
+                                    Portfolio DyC
+                                </div>
+                                <div class="t22">
+                                    HTML, CSS, JS, PHP, jQuery
+                                </div>
+                                <div class="t33">
+                                    Mettrait en avant vos compétences et réalisations en web design, développement backend (PHP, Laravel), et intégration front-end.
+                                </div>
+                                <div class="t44">
+                                    <a class="menu__link" href="https://dyc-c6rx.onrender.com">visiter le site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div style="position: absolute;z-index: 23;transform: translateX(10px) translateY(10px);">
+                            <span class="badge bg-label-success">Terminer</span>
+                        </div>
+                        <embed src="./asset/projet/1.PNG" type="">
+                        <div class="taille transform">
+                            <div class="texxt">
+                                <div class="t11">
+                                    Tableau de bord pour site vitrine
+                                </div>
+                                <div class="t22">
+                                    HTML, CSS, php, jQuery
+                                </div>
+                                <div class="t33">
+                                    Un tableau de bord pour site vitrine permet de gérer efficacement le contenu et les fonctionnalités. Il inclut des sections pour modifier les textes, images, témoignages, et optimiser l’affichage. Facile à utiliser, il offre un contrôle total.
+                                </div>
+                                <div class="t44">
+                                    <a class="menu__link" href="https://dyc-c6rx.onrender.com/admin">visiter le site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div style="position: absolute;z-index: 23;transform: translateX(10px) translateY(10px);">
+                            <span class="badge bg-label-warning">Non terminner</span>
+                        </div>
+                        <embed src="./asset/projet/2.PNG" type="">
+                        <div class="taille transform">
+                            <div class="texxt">
+                                <div class="t11">
+                                    Site de vente en ligne
+                                </div>
+                                <div class="t22">
+                                    HTML, CSS, JS
+                                </div>
+                                <div class="t33">
+                                    Un site de vente en ligne permet de présenter et vendre des produits ou services. Il inclut un catalogue, un panier, des options de paiement sécurisé, et un espace client. Optimisé pour le SEO, il améliore l’expérience utilisateur et favorise les ventes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div style="position: absolute;z-index: 23;transform: translateX(10px) translateY(10px);">
+                            <span class="badge bg-label-success">Terminer</span>
+                        </div>
+                        <embed src="./asset/projet/3.PNG" type="">
+                        <div class="taille transform">
+                            <div class="texxt">
+                                <div class="t11">
+                                    Site vitrine de T-CONTRACTORS
+                                </div>
+                                <div class="t22">
+                                    HTML, CSS, JS, PHP
+                                </div>
+                                <div class="t33">
+                                    Un site vitrine pour T-CONTRACTORS mettrait en avant les services, réalisations, et l’identité de l’entreprise. Avec une navigation intuitive, des sections sur l’expertise, un formulaire de contact, et un design professionnel, il renforcerait la crédibilité et attirerait des clients potentiels.
+                                </div>
+                                <div class="t44">
+                                    <a class="menu__link" href="https://t-contractors.net">visiter le site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div style="position: absolute;z-index: 23;transform: translateX(10px) translateY(10px);">
+                            <span class="badge bg-label-warning">Non terminner</span>
+                        </div>
+                        <embed src="./asset/projet/4.PNG" type="">
+                        <div class="taille transform">
+                            <div class="texxt">
+                                <div class="t11">
+                                    Tableau de bord pour un site de vente en ligne	
+                                </div>
+                                <div class="t22">
+                                    HTML, CSS, JS, PHP
+                                </div>
+                                <div class="t33">
+                                    Un tableau de bord pour un site de vente en ligne offre une gestion centralisée. Il inclut des fonctionnalités pour gérer les produits, les catégories, les commandes, les clients, les statistiques de vente, et les promotions. Intuitif et sécurisé, il simplifie l’administration quotidienne et optimise les performances du site.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- <div class="dashed" style="margin-bottom: 150px;">
+                <button class="button">
+                    Plus
+                </button>
+            </div> -->
+    
+            <div class="dashed" id="termoignage">
+                <div class="trait"></div>
+            </div>
+    
+             <div class="text-align-center padding reveal-1">
+                <div class="titre" >
+                    termoignage
+                </div>
+                <div class="texte">
+                    Découvrez ce que nos clients satisfaits ont à dire sur nos produits et services. Leurs témoignages authentiques reflètent mes engagements envers la satisfaction client et la qualité.
+                </div>
+            </div>
+    
+
+          
+            
+        </section>
+
+        <section class="sectionpad padding colorpad1" id="temoignage">
+            <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-e22d177866a48573" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-2054px, 0px, 0px); transition-delay: 0ms;">
+                   
+                    <div class="bosd swiper-slide">
+                        <div>
+                            <div class="imgxxc">
+                                <embed src="./asset/temoin/1.png" type="">
+                            </div>
+                        </div>
+                        <div class="name">
+                            M. TJEGA MOISE JUNIOR
+                        </div>
+
+                        <div class="meter">
+                            CEO MULEMA CCHU
+                        </div>
+                        <div>
+                            <span>“</span> Sineno est un développeur web exceptionnel, avec des compétences en HTML, CSS, JavaScript et plus. Il crée des sites web et applications de haute qualité, résout des problèmes complexes et améliore l'expérience utilisateur. Je le recommande vivement pour ses compétences et sa détermination. <span>”</span>
+                        </div>
+                        
+                    </div>
+                    <div class="bosd swiper-slide">
+                        <div>
+                            <div class="imgxxc">
+                                <embed src="./asset/temoin/2.png" type="">
+                            </div>
+                        </div>
+                        <div class="name">
+                            M. Fabrice Armel NOUBAYOU NGAMBOU
+                        </div>
+
+                        <div class="meter">
+                            Designer professionnel Mulema
+                        </div>
+                        <div>
+                            <span>“</span> Ce développeur web est compétent, avec une bonne compréhension des technologies web. Il crée des solutions efficaces et répond aux besoins des clients. Globalement, il fait du bon travail. <span>”</span>
+                        </div>
+                        
+                    </div>
+                    
+               
+                
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal" style="transform: translateY(-12px);"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span></div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </section>
+        
+        <section class="sectionpad padding" style="padding-bottom: 1cm;padding-top: 1cm;">
+            <div class="dashed" id="blog">
+                <div class="trait"></div>
+            </div>
+    
+             <div class="text-align-center padding reveal-1">
+                <div class="titre" >
+                    Blogs
+                </div>
+                
+            </div>
+            <div class="blog-list">
+                <div class="cardxxx">
+                    <div class="date-time-container">
+                        <time class="date-time" datetime="2022-10-10">
+                        <span>2022</span>
+                        <span class="separator"></span>
+                        <span>Oct 10</span>
+                        </time>
+                    </div>
+                    
+                    <div class="content">
+                    
+                        <div style="width: 100%;height: 5cm;">
+                            <img src="./asset/projet/impot.PNG" style="width: 100%;height: 100%;opacity: 90%;" alt="" srcset="">
+                        </div>   
+                        <div class="infos">
+                            <a href="#">
+                                <span class="title">
+                                How to make this blog cardxxx ?
+                                </span>
+                            </a>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                                Molestias explicabo corporis voluptatem?
+                            </p>
+                        </div>
+
+                        <a class="action" href="#">
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                <div class="cardxxx">
+                    <div class="date-time-container">
+                        <time class="date-time" datetime="2022-10-10">
+                        <span>2022</span>
+                        <span class="separator"></span>
+                        <span>Oct 10</span>
+                        </time>
+                    </div>
+                    
+                    <div class="content">
+                    
+                        <div style="width: 100%;height: 5cm;">
+                            <img src="./asset/projet/impot.PNG" style="width: 100%;height: 100%;opacity: 90%;" alt="" srcset="">
+                        </div>   
+                        <div class="infos">
+                            <a href="#">
+                                <span class="title">
+                                How to make this blog cardxxx ?
+                                </span>
+                            </a>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                                Molestias explicabo corporis voluptatem?
+                            </p>
+                        </div>
+
+                        <a class="action" href="#">
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                <div class="cardxxx">
+                    <div class="date-time-container">
+                        <time class="date-time" datetime="2022-10-10">
+                        <span>2022</span>
+                        <span class="separator"></span>
+                        <span>Oct 10</span>
+                        </time>
+                    </div>
+                    
+                    <div class="content">
+                    
+                        <div style="width: 100%;height: 5cm;">
+                            <img src="./asset/projet/impot.PNG" style="width: 100%;height: 100%;opacity: 90%;" alt="" srcset="">
+                        </div>   
+                        <div class="infos">
+                            <a href="#">
+                                <span class="title">
+                                How to make this blog cardxxx ?
+                                </span>
+                            </a>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                                Molestias explicabo corporis voluptatem?
+                            </p>
+                        </div>
+
+                        <a class="action" href="#">
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+
+        </section>
+        
+        <footer class="reveal" id="contactus">
+            <div class="left">
+                <div class="text">
+                    <div class="t1">
+                        Contact
+                    </div>
+                    <div class="t2">
+                        Restons connectés ! Contactez moi facilement pour toute demande d'information, collaborations ou questions.
+                    </div>
+                </div>
+                <li class="classes">
+                    <div class="icon">
+                        <!-- <embed src="./asset/svg/telephone.svg" type=""> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.237 23.271">
+                            <g id="phone" transform="translate(-0.344)">
+                                <g id="Groupe_34842" data-name="Groupe 34842" transform="translate(0.344 0)">
+                                <path id="Tracé_36828" data-name="Tracé 36828" d="M18.719,40.475a2.289,2.289,0,0,0-1.66-.761,2.367,2.367,0,0,0-1.68.756l-1.552,1.547c-.128-.069-.255-.133-.378-.2-.177-.088-.344-.172-.486-.26A16.868,16.868,0,0,1,8.92,37.877a9.951,9.951,0,0,1-1.326-2.092c.4-.368.776-.751,1.139-1.12.138-.138.275-.28.413-.417a2.253,2.253,0,0,0,0-3.4L7.805,29.508c-.152-.152-.309-.309-.457-.467-.295-.3-.6-.619-.923-.914a2.325,2.325,0,0,0-1.645-.722,2.406,2.406,0,0,0-1.67.722l-.01.01L1.43,29.822A3.593,3.593,0,0,0,.365,32.106,8.61,8.61,0,0,0,.993,35.75a21.147,21.147,0,0,0,3.757,6.267,23.113,23.113,0,0,0,7.7,6.026,11.991,11.991,0,0,0,4.322,1.277c.1,0,.211.01.309.01a3.7,3.7,0,0,0,2.834-1.218c0-.01.015-.015.02-.025a11.166,11.166,0,0,1,.859-.889c.211-.2.427-.413.638-.634a2.45,2.45,0,0,0,.742-1.7,2.36,2.36,0,0,0-.756-1.685Zm1.758,5.172s0,0,0,0c-.192.206-.388.393-.6.6a12.916,12.916,0,0,0-.948.982,2.368,2.368,0,0,1-1.847.781c-.074,0-.152,0-.226,0a10.652,10.652,0,0,1-3.831-1.149,21.817,21.817,0,0,1-7.249-5.678,19.939,19.939,0,0,1-3.536-5.889,7.013,7.013,0,0,1-.55-3.075,2.255,2.255,0,0,1,.678-1.459l1.675-1.675a1.116,1.116,0,0,1,.747-.349,1.051,1.051,0,0,1,.717.344l.015.015c.3.28.584.57.884.879.152.157.309.314.467.476l1.341,1.341a.937.937,0,0,1,0,1.523c-.142.142-.28.285-.422.422-.413.422-.805.815-1.233,1.2-.01.01-.02.015-.025.025a1,1,0,0,0-.255,1.115l.015.044A10.765,10.765,0,0,0,7.879,38.7l0,0a18.027,18.027,0,0,0,4.361,3.968,6.707,6.707,0,0,0,.6.329c.177.088.344.172.486.26.02.01.039.025.059.034a1.065,1.065,0,0,0,.486.123,1.05,1.05,0,0,0,.747-.339l1.68-1.68a1.111,1.111,0,0,1,.742-.368,1,1,0,0,1,.707.359l.01.01,2.706,2.706A.971.971,0,0,1,20.477,45.647Z" transform="translate(-0.344 -26.06)" fill="var(--blanc)"/>
+                                <path id="Tracé_36829" data-name="Tracé 36829" d="M245.49,87.241a6.321,6.321,0,0,1,5.147,5.147.659.659,0,0,0,.653.55.876.876,0,0,0,.113-.01.664.664,0,0,0,.545-.766,7.643,7.643,0,0,0-6.228-6.228.666.666,0,0,0-.766.54A.656.656,0,0,0,245.49,87.241Z" transform="translate(-232.93 -81.705)" fill="var(--blanc)"/>
+                                <path id="Tracé_36830" data-name="Tracé 36830" d="M259.8,10.265A12.585,12.585,0,0,0,249.545.01a.662.662,0,1,0-.216,1.306,11.241,11.241,0,0,1,9.165,9.165.659.659,0,0,0,.653.55.877.877,0,0,0,.113-.01A.651.651,0,0,0,259.8,10.265Z" transform="translate(-236.574 0)" fill="var(--blanc)"/>
+                                </g>
+                            </g>
+                        </svg>                              
+                    </div>
+                    <div class="text-icon">
+                        <div class="t1">
+                            Appeller-moi
+                        </div>
+                        <div class="t2">
+                            <a href="tel:+237654885054">+237 654885054</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="classes">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15px" hieght="15px" viewBox="0 0 21.5 16.377">
+                                <g id="email-line" transform="translate(0 -61)">
+                                  <g id="Groupe_34841" data-name="Groupe 34841" transform="translate(0 61)">
+                                    <path id="Tracé_36827" data-name="Tracé 36827" d="M19.61,61H1.89A1.893,1.893,0,0,0,0,62.89v12.6a1.893,1.893,0,0,0,1.89,1.89H19.61a1.893,1.893,0,0,0,1.89-1.89V62.89A1.893,1.893,0,0,0,19.61,61Zm-.261,1.26L10.79,70.819,2.157,62.26ZM1.26,75.226V63.144l6.067,6.015Zm.891.891,6.071-6.071,2.127,2.109a.63.63,0,0,0,.889,0l2.074-2.074,6.038,6.038Zm18.09-.891L14.2,69.188l6.038-6.038Z" transform="translate(0 -61)" fill="var(--blanc)"/>
+                                  </g>
+                                </g>
+                            </svg>                              
+                        </div>
+                        <div class="text-icon">
+                            <div class="t1">
+                                Email
+                            </div>
+                            <div class="t2">
+                                <a href="mailto:juniorsineno@gmail.com">juniorsineno@gmail.com</a>
+                            </div>
+                        </div>
+                </li>
+                <li class="classes">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21.013">
+                            <g id="location-3" transform="translate(-48.886)">
+                              <g id="Groupe_34838" data-name="Groupe 34838" transform="translate(48.886)">
+                                <g id="Groupe_34837" data-name="Groupe 34837" transform="translate(0)">
+                                  <path id="Tracé_36825" data-name="Tracé 36825" d="M64.361,3.653a8.484,8.484,0,0,0-13.949,0,8.485,8.485,0,0,0-.988,7.818A6.683,6.683,0,0,0,50.655,13.5l6.172,7.249a.734.734,0,0,0,1.119,0l6.17-7.247a6.689,6.689,0,0,0,1.231-2.031A8.487,8.487,0,0,0,64.361,3.653Zm-.39,7.308A5.241,5.241,0,0,1,63,12.549l0,0-5.612,6.592-5.616-6.6a5.244,5.244,0,0,1-.971-1.592,7.019,7.019,0,0,1,.82-6.468,7.015,7.015,0,0,1,11.532,0A7.02,7.02,0,0,1,63.971,10.962Z" transform="translate(-48.886)" fill="var(--blanc)"/>
+                                </g>
+                              </g>
+                              <g id="Groupe_34840" data-name="Groupe 34840" transform="translate(53.272 4.359)">
+                                <g id="Groupe_34839" data-name="Groupe 34839">
+                                  <path id="Tracé_36826" data-name="Tracé 36826" d="M159.868,106.219a4.114,4.114,0,1,0,4.114,4.114A4.119,4.119,0,0,0,159.868,106.219Zm0,6.759a2.645,2.645,0,1,1,2.645-2.645A2.648,2.648,0,0,1,159.868,112.978Z" transform="translate(-155.754 -106.219)" fill="var(--blanc)"/>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                          
+                    </div>
+                    <div class="text-icon">
+                        <div class="t1">
+                            Adresse
+                        </div>
+                        <div class="t2">
+                            Carrefour Combie, Douala Cameroun
+                        </div>
+                    </div>
+                </li>
+                    
+                <div>
+                  <div class="cardxxxx">
+                    <span>Me Suivre</span>
+                    
+                        
+
+                              <a class="social-link" href="https://wa.me/message/NFKXUGUYJDE2F1">
+                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">\r\n<path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"/>\r\n<path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"/>\r\n<path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"/>\r\n<path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"/>\r\n<defs>\r\n<linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse">\r\n<stop stop-color="#5BD066"/>\r\n<stop offset="1" stop-color="#27B43E"/>\r\n</linearGradient>\r\n</defs>\r\n</svg>
+                              </a>
+                              <a class="social-link" href="https://www.linkedin.com/in/junior-sineno-a25109196?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\n<circle cx="24" cy="24" r="20" fill="#0077B5"/>\n<path fill-rule="evenodd" clip-rule="evenodd" d="M18.7747 14.2839C18.7747 15.529 17.8267 16.5366 16.3442 16.5366C14.9194 16.5366 13.9713 15.529 14.0007 14.2839C13.9713 12.9783 14.9193 12 16.3726 12C17.8267 12 18.7463 12.9783 18.7747 14.2839ZM14.1199 32.8191V18.3162H18.6271V32.8181H14.1199V32.8191Z" fill="white"/>\n<path fill-rule="evenodd" clip-rule="evenodd" d="M22.2393 22.9446C22.2393 21.1357 22.1797 19.5935 22.1201 18.3182H26.0351L26.2432 20.305H26.3322C26.9254 19.3854 28.4079 17.9927 30.8101 17.9927C33.7752 17.9927 35.9995 19.9502 35.9995 24.219V32.821H31.4922V24.7838C31.4922 22.9144 30.8404 21.6399 29.2093 21.6399C27.9633 21.6399 27.2224 22.4999 26.9263 23.3297C26.8071 23.6268 26.7484 24.0412 26.7484 24.4574V32.821H22.2411V22.9446H22.2393Z" fill="white"/>\n</svg>
+                              </a>
+                            
+                          
+                    
+                  </div>
+                </div>        
+            </div>
+
+            
+            
+            <div class="right">
+                <div class="text">
+                    Contacter moi
+                </div>
+
+                <form id="formsend">
+                    <div class="group-input">
+                        <div class="in nom">
+                            <div class="indication">
+                                <div class="no choix" title="Veuillez remplir ce champ.">
+                                    <i class="fa fa-exclamation" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <input type="text" name="name" placeholder="Nom" autocomplete="off" id="nom" class="put anime">
+                        </div>
+                        <div class="in email">
+                            <div class="indication">
+                                <div class="no choix" title="Veuillez remplir ce champ.">
+                                    <i class="fa fa-exclamation" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <input type="email" name="email" placeholder="Adresse Email" autocomplete="off" id="email" class="put anime">
+                        </div>
+                    </div>
+                    <div class="group-input">
+                        <div class="in tel">
+                            <div class="indication">
+                                <div class="no choix" title="Veuillez remplir ce champ.">
+                                    <i class="fa fa-exclamation" aria-hidden="true"></i>
+                                </div>
+                            </div>                           
+                            <input type="text" name="tel" placeholder="Téléphone portable" autocomplete="off" id="tel" class="put anime">
+                        </div>
+                        <div class="in subject">
+                            <div class="indication">
+                                <div class="no choix" title="Veuillez remplir ce champ.">
+                                    <i class="fa fa-exclamation" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <input type="text" name="subject" placeholder="objet" autocomplete="off" id="subject" class="put anime">
+                        </div>
+                    </div>
+                    <div class="in message">
+                        <div class="indication">
+                            <div class="no choix" title="Veuillez remplir ce champ.">
+                                <i class="fa fa-exclamation" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <textarea name="message" maxlength="100" placeholder="Message" class="area anime" id="message"></textarea>
+                    </div>
+                    <button type="button" class="button " id="submit" name="submit" value="soumettre">
+                        <div class="textex">
+                            Soumettre
+                        </div>
+                        <div class="loadx" style="transform: translateY(23px);">
+                            <div class="containers">
+                                <div class="cube"><div class="cube__inner"></div></div>
+                                <div class="cube"><div class="cube__inner"></div></div>
+                                <div class="cube"><div class="cube__inner"></div></div>
+                              </div>
+                              
+                              <style>
+                                .containers {
+                                  --uib-size: 35px;
+                                  --uib-color: rgb(255, 255, 255);
+                                  --uib-speed: 1.75s;
+                                  display: flex;
+                                  align-items: flex-end;
+                                  padding-bottom: 20%;
+                                  justify-content: space-between;
+                                  width: var(--uib-size);
+                                  height: calc(var(--uib-size) * 0.6);
+                                }
+                                
+                                .cube {
+                                  flex-shrink: 0;
+                                  width: calc(var(--uib-size) * 0.2);
+                                  height: calc(var(--uib-size) * 0.2);
+                                  animation: jump var(--uib-speed) ease-in-out infinite;
+                                }
+                                
+                                .cube__inner {
+                                  display: blogk;
+                                  height: 100%;
+                                  width: 100%;
+                                  border-radius: 25%;
+                                  background-color: var(--uib-color);
+                                  transform-origin: center bottom;
+                                  animation: morph var(--uib-speed) ease-in-out infinite;
+                                  transition: background-color 0.3s ease;
+                                }
+                                
+                                .cube:nth-child(2) {
+                                  animation-delay: calc(var(--uib-speed) * -0.36);
+                                
+                                  .cube__inner {
+                                    animation-delay: calc(var(--uib-speed) * -0.36);
+                                  }
+                                }
+                                .cube:nth-child(3) {
+                                  animation-delay: calc(var(--uib-speed) * -0.2);
+                                
+                                  .cube__inner {
+                                    animation-delay: calc(var(--uib-speed) * -0.2);
+                                  }
+                                }
+                                
+                                @keyframes jump {
+                                  0% {
+                                    transform: translateY(0px);
+                                  }
+                                
+                                  30% {
+                                    transform: translateY(0px);
+                                    animation-timing-function: ease-out;
+                                  }
+                                
+                                  50% {
+                                    transform: translateY(-200%);
+                                    animation-timing-function: ease-in;
+                                  }
+                                
+                                  75% {
+                                    transform: translateY(0px);
+                                    animation-timing-function: ease-in;
+                                  }
+                                }
+                                
+                                @keyframes morph {
+                                  0% {
+                                    transform: scaleY(1);
+                                  }
+                                
+                                  10% {
+                                    transform: scaleY(1);
+                                  }
+                                
+                                  20%,
+                                  25% {
+                                    transform: scaleY(0.6) scaleX(1.3);
+                                    animation-timing-function: ease-in-out;
+                                  }
+                                
+                                  30% {
+                                    transform: scaleY(1.15) scaleX(0.9);
+                                    animation-timing-function: ease-in-out;
+                                  }
+                                
+                                  40% {
+                                    transform: scaleY(1);
+                                  }
+                                
+                                  70%,
+                                  85%,
+                                  100% {
+                                    transform: scaleY(1);
+                                  }
+                                
+                                  75% {
+                                    transform: scaleY(0.8) scaleX(1.2);
+                                  }
+                                }
+                              </style>
+                              
+                              
+                        </div>
+                    </button>
+                    
+                    
+                </form>
+                
+            </div>
+            
+        </footer>
+        <div class="return-top" onclick="return_top()">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <div href="#"  style="visibility: hidden;">
+        <button class="toggles" onclick="theme_change()">
+            <div class="day boulles" >                               
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V3C12.75 3.41421 12.4142 3.75 12 3.75C11.5858 3.75 11.25 3.41421 11.25 3V2C11.25 1.58579 11.5858 1.25 12 1.25ZM4.39861 4.39861C4.6915 4.10572 5.16638 4.10572 5.45927 4.39861L5.85211 4.79145C6.145 5.08434 6.145 5.55921 5.85211 5.85211C5.55921 6.145 5.08434 6.145 4.79145 5.85211L4.39861 5.45927C4.10572 5.16638 4.10572 4.6915 4.39861 4.39861ZM19.6011 4.39887C19.894 4.69176 19.894 5.16664 19.6011 5.45953L19.2083 5.85237C18.9154 6.14526 18.4405 6.14526 18.1476 5.85237C17.8547 5.55947 17.8547 5.0846 18.1476 4.79171L18.5405 4.39887C18.8334 4.10598 19.3082 4.10598 19.6011 4.39887ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H3C3.41421 11.25 3.75 11.5858 3.75 12C3.75 12.4142 3.41421 12.75 3 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM20.25 12C20.25 11.5858 20.5858 11.25 21 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H21C20.5858 12.75 20.25 12.4142 20.25 12ZM18.1476 18.1476C18.4405 17.8547 18.9154 17.8547 19.2083 18.1476L19.6011 18.5405C19.894 18.8334 19.894 19.3082 19.6011 19.6011C19.3082 19.894 18.8334 19.894 18.5405 19.6011L18.1476 19.2083C17.8547 18.9154 17.8547 18.4405 18.1476 18.1476ZM5.85211 18.1479C6.145 18.4408 6.145 18.9157 5.85211 19.2086L5.45927 19.6014C5.16638 19.8943 4.6915 19.8943 4.39861 19.6014C4.10572 19.3085 4.10572 18.8336 4.39861 18.5407L4.79145 18.1479C5.08434 17.855 5.55921 17.855 5.85211 18.1479ZM12 20.25C12.4142 20.25 12.75 20.5858 12.75 21V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V21C11.25 20.5858 11.5858 20.25 12 20.25Z" />
+                </svg>
+            </div>
+            <div class="night boulles">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25px" hieght="25px" viewBox="0 0 384 512">! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.<path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+            </div>
+        </button>
+    </div>
+    <div class="copyright">
+         © 2023 codé avec 🔥 par Junior sineno. Tous droits réservés.
+    </div>
+
+<style>
+    .badge {
+    text-transform: uppercase;
+    line-height: 0.75;
+    border: 2px solid #00000042;
+}
+</style>
+</body>
+</html>
+        <script src="js/cv.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/form.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+</div>
+    
+    

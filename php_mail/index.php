@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 require './PHPMailer/src/Exception.php';
 require './PHPMailer/src/PHPMailer.php';
 require './PHPMailer/src/SMTP.php';
-require '../config-php/config.php';
+// require '../config-php/config.php';
 //hnnd qphf fmvh uxmm
 //Create an instance; passing `true` enables exceptions
 
@@ -82,17 +82,17 @@ if (envoie_mail($_POST['name'],$_POST['email'],$_POST['subject'],$_POST['message
 
 
     // Insérez les informations dans la base de données
-    $query = "INSERT INTO message (nom, email, tel, sujet, message, date) VALUES (:nom, :email, :tel, :sujet, :message, :date)";
-    $stmt = $bdd->prepare($query);
+    // $query = "INSERT INTO message (nom, email, tel, sujet, message, date) VALUES (:nom, :email, :tel, :sujet, :message, :date)";
+    // $stmt = $bdd->prepare($query);
 
-    $success = $stmt->execute([
-        ':nom' => $_POST['name'],
-        ':email' => $_POST['email'],
-        ':tel' => $_POST['tel'],
-        ':sujet' => $_POST['subject'],
-        ':message' => $_POST['message'],
-        ':date' => $date,
-    ]);
+    // $success = $stmt->execute([
+    //     ':nom' => $_POST['name'],
+    //     ':email' => $_POST['email'],
+    //     ':tel' => $_POST['tel'],
+    //     ':sujet' => $_POST['subject'],
+    //     ':message' => $_POST['message'],
+    //     ':date' => $date,
+    // ]);
 
     echo "oui"; // Succès
 
